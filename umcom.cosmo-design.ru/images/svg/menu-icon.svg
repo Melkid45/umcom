@@ -1,0 +1,43 @@
+<svg width="28.044922" height="26.048828" viewBox="0 0 28.0449 26.0488" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_252_2109_dd" x="0.000000" y="0.000000" width="28.009766" height="6.048828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="0" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_252_2113_dd" x="0.015625" y="10.000000" width="28.009766" height="6.048828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="0" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_252_2117_dd" x="0.033203" y="20.000000" width="28.009766" height="6.048828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="0" result="effect_layerBlur_1"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_252_2109_dd)">
+		<circle id="Ellipse 10" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 3.00586 3.04395)" fill="#A237A1" fill-opacity="1.000000"/>
+		<circle id="Ellipse 14" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 25.0059 3.00586)" fill="#A237A1" fill-opacity="1.000000"/>
+		<g opacity="0.800000">
+			<circle id="Ellipse 11" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 14.0059 3.02539)" fill="#A237A1" fill-opacity="1.000000"/>
+		</g>
+	</g>
+	<g filter="url(#filter_252_2113_dd)">
+		<circle id="Ellipse 10" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 3.02148 13.0439)" fill="#A237A1" fill-opacity="1.000000"/>
+		<circle id="Ellipse 14" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 25.0215 13.0059)" fill="#A237A1" fill-opacity="1.000000"/>
+		<g opacity="0.800000">
+			<circle id="Ellipse 11" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 14.0215 13.0254)" fill="#A237A1" fill-opacity="1.000000"/>
+		</g>
+	</g>
+	<g filter="url(#filter_252_2117_dd)">
+		<circle id="Ellipse 10" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 3.03906 23.0439)" fill="#A237A1" fill-opacity="1.000000"/>
+		<circle id="Ellipse 14" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 25.0391 23.0059)" fill="#A237A1" fill-opacity="1.000000"/>
+		<g opacity="0.800000">
+			<circle id="Ellipse 11" r="3.000000" transform="matrix(0.999999 -0.00173132 0.00173132 0.999999 14.0391 23.0254)" fill="#A237A1" fill-opacity="1.000000"/>
+		</g>
+	</g>
+</svg>

@@ -136,15 +136,20 @@
 
     .stage__back{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
     }
+    .wrapper{
+        overflow: auto;
+        height: auto;
+    }
     .table{
         width: 100%;
         margin-top: 164rem;
+        padding-bottom: 80rem;
     }
     .table .container{
         width: 100%;
@@ -276,10 +281,6 @@
         overflow: auto;
         height: auto;
     }
-    .manager{
-        margin-top: 112rem;
-        width: 100%;
-    }
     .stage__back{
         width: 100%;
         height: 100vh;
@@ -290,7 +291,7 @@
     }
     .table{
         width: 100%;
-        margin-top: 164rem;
+        margin-top: 124rem;
         padding-left: 15rem;
         padding-bottom: 80rem;
         padding-right: 15rem;

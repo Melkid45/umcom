@@ -46,9 +46,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.stage__body-graph-item.active svg path{
-    fill: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
-    
+.stage__body-graph-item.active .images__white{
+    opacity: 0;
+}
+.stage__body-graph-item.active .images__grad{
+    opacity: 1;
 }
 .stage__body-graph-item:hover span{
     background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
@@ -60,9 +62,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.stage__body-graph-item:hover svg path{
-    fill: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
-    
+.stage__body-graph-item:hover .images__white{
+    opacity: 0;
+}
+.stage__body-graph-item:hover .images__grad{
+    opacity: 1;
 }
 .stage__body-graph-item:nth-child(1){
     position: absolute;
@@ -89,9 +93,25 @@
     bottom: 184px;
     left:27px;
 }
-.stage__body-graph-item svg{
+.stage__body-graph-item-images{
     width: 48px;
     height: 48px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stage__body-graph-item-images img{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.images__white{
+    opacity: 1;
+}
+.images__grad{
+    opacity: 0;
 }
 .stage__body-graph-item span{
     font-size: 18px;
@@ -153,4 +173,303 @@
 
 .none{
     display: none !important;
+}
+
+@media (max-width: 1920px) {
+    html{
+        font-size: calc(100vw / 1920);
+    }
+
+
+    .stage__back{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .stage{
+        width: 100%;
+        
+    }
+    .stage__body{
+        display: flex;
+        align-items: center;
+        gap: 92rem;
+        justify-content: center;
+    }
+    .stage__body-graph{
+        width: 728.51rem;
+        height: 650rem;
+        position: relative;
+        background: url(../images/stage__section.png) center no-repeat;
+        background-size: cover;    
+    }
+    
+    .stage__body-graph-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8rem;
+        cursor: pointer;
+    }
+    .stage__body-graph-item.active span{
+        background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .stage__body-graph-item.active p{
+        background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .stage__body-graph-item.active .images__white{
+        opacity: 0;
+    }
+    .stage__body-graph-item.active .images__grad{
+        opacity: 1;
+    }
+    .stage__body-graph-item:hover span{
+        background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .stage__body-graph-item:hover p{
+        background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .stage__body-graph-item:hover .images__white{
+        opacity: 0;
+    }
+    .stage__body-graph-item:hover .images__grad{
+        opacity: 1;
+    }
+    .stage__body-graph-item:nth-child(1){
+        position: absolute;
+        top: 123rem;
+        left: 89rem;
+    }
+    .stage__body-graph-item:nth-child(2){
+        position: absolute;
+        top: 152rem;
+        right: 183rem;
+    }
+    .stage__body-graph-item:nth-child(3){
+        position: absolute;
+        bottom: 170rem;
+        right: 83rem;
+    }
+    .stage__body-graph-item:nth-child(4){
+        position: absolute;
+        bottom: 44rem;
+        left: 226rem;
+    }
+    .stage__body-graph-item:nth-child(5){
+        position: absolute;
+        bottom: 184rem;
+        left:27rem;
+    }
+    .stage__body-graph-item-images{
+        width: 48rem;
+        height: 48rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .stage__body-graph-item-images img{
+        width: 48rem;
+        height: 48rem;
+        position: absolute;
+
+    }
+    .stage__body-graph-item span{
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 21.6rem;
+        text-align: center;
+        color: #fff;
+        margin-top: 8rem;
+        transition: all 0.5s ease;
+    }
+    .stage__body-graph-item p{
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 16.8rem;
+        text-align: center;
+        color: #C5C5C5;
+        transition: all 0.5s ease;
+    }
+    
+    .stage__body-text{
+        
+    }
+    .stage__body-text-item{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        max-width: 586rem;
+    
+    }
+    .stage__body-text-item h2{
+        font-size: 20rem;
+        font-weight: 700;
+        line-height: 22.7rem;
+        text-align: left;
+        color: #F0F6FF;
+        transition: all 0.3s ease;
+    }
+    .stage__body-text-item span{
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 24rem;
+        text-align: left;
+        color: #C5C5C5;
+        transition: all 0.3s ease;
+    }
+    .stage__body-text-item p{
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 22rem;
+        text-align: left;
+        color: #F0F6FF;
+        transition: all 0.3s ease;
+    }
+    .hid{
+        opacity: 0;
+        translate: 0 10%;
+    }
+    
+    
+    .none{
+        display: none !important;
+    }
+}
+
+@media (max-width: 640px) {
+    html{
+        font-size: calc(100vw / 320);
+    }
+    .wrapper{
+        overflow: auto;
+        height: auto;
+    }
+    .stage{
+        margin-top: 112rem;
+        padding-bottom: 60rem;
+    }
+    .stage__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 62rem;
+    }
+    .stage__body-graph{
+        width: 288rem;
+        height: 256rem;
+    }
+    .stage__body-text-item{
+        padding: 0 15rem;
+    }
+    .stage__body-text-item h2{
+        font-size: 16rem;
+        font-weight: 700;
+        line-height: 18rem;
+        text-align: left;
+        color: #F0F6FF;
+        transition: all 0.3s ease;
+        max-width: 291rem;
+    }
+    .stage__body-text-item span{
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 24rem;
+        text-align: left;
+        color: #C5C5C5;
+        transition: all 0.3s ease;
+        max-width: 291rem;
+    }
+    .stage__body-text-item p{
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 16rem;
+        text-align: left;
+        color: #F0F6FF;
+        transition: all 0.3s ease;
+        max-width: 291rem;
+    }
+
+    .stage__body-graph-item{
+        gap: 3rem;
+    }
+
+    .stage__body-graph-item-images{
+        width: 24rem;
+        height: 24rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .stage__body-graph-item-images img{
+        width: 24rem;
+        height: 24rem;
+        position: absolute;
+
+    }
+    .stage__body-graph-item span{
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 12rem;
+        text-align: center;
+        color: #fff;
+        margin-top: 0rem;
+        transition: all 0.5s ease;
+    }
+    .stage__body-graph-item p{
+        font-size: 8rem;
+        font-weight: 400;
+        line-height: 10rem;
+        text-align: center;
+        color: #C5C5C5;
+        transition: all 0.5s ease;
+        max-width: 90rem;
+    }
+
+    .stage__body-graph-item:nth-child(1){
+        position: absolute;
+        top: 35rem;
+        left: 29rem;
+    }
+    .stage__body-graph-item:nth-child(2){
+        position: absolute;
+        top: 55rem;
+        right: 62rem;
+    }
+    .stage__body-graph-item:nth-child(3){
+        position: absolute;
+        bottom: 65rem;
+        right: 16rem;
+    }
+    .stage__body-graph-item:nth-child(4){
+        position: absolute;
+        bottom: 6rem;
+        left: 76rem;
+    }
+    .stage__body-graph-item:nth-child(5){
+        position: absolute;
+        bottom: 57rem;
+        left: -2rem;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
 }

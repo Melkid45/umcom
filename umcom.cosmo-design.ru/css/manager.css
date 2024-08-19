@@ -1,13 +1,23 @@
+.wrapper{
+    overflow: auto;
+    height: auto;
+    min-height: 100vh;
+}
+
 .manager{
-    margin-top: 112px;
+    margin-top: 162px;
     width: 100%;
+    padding-bottom: 100px;
 }
 .manager__body{
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 154px;
+    align-items: center;
+    gap: 144px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .manager__body-item{
     display: flex;
@@ -54,4 +64,159 @@
     line-height: 19.2px;
     text-align: left;
     color: #C0C0C0;
+}
+
+
+
+@media (max-width: 1920px) {
+    html{
+        font-size: calc(100vw / 1920);
+    }
+    .wrapper{
+        overflow: auto;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .manager{
+        margin-top: 162rem;
+        width: 100%;
+        padding-bottom: 100rem;
+    }
+    .manager__body{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 144rem;
+        max-width: 1000rem;
+        margin: 0 auto;
+    }
+    .manager__body-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35rem;
+    }
+    .manager__body-item-top{
+        width: 425rem;
+        height: 535rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        background: url(../images/manager__back.png) center no-repeat;
+        background-size: cover;
+    
+    }
+    .manager__body-item-top img{
+        width: 415rem;
+        height: 519rem;
+        margin-bottom: 3rem;
+    }
+    .manager__body-item-text{
+        width: 100%;
+        padding: 17rem 0rem;
+        background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        border-radius: 22rem;
+    }
+    .manager__body-item-text span{
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 24rem;
+        text-align: left;
+        color: #fff;
+    }
+    .manager__body-item-text p{
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 19.2rem;
+        text-align: left;
+        color: #C0C0C0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+    html{
+        font-size: calc(100vw / 320);
+    }
+    .wrapper{
+        overflow: auto;
+        height: auto;
+    }
+    .manager{
+        margin-top: 112rem;
+        width: 100%;
+    }
+    .manager__body{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30rem;
+    }
+    .manager__body-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35rem;
+    }
+    .manager__body-item-top{
+        width: 288rem;
+        height: 362rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        background: url(../images/manager__back.png) center no-repeat;
+        background-size: cover;
+    
+    }
+    .manager__body-item-top img{
+        width: 415rem;
+        height: 519rem;
+        margin-bottom: 3rem;
+    }
+    .manager__body-item-text{
+        width: 100%;
+        padding: 17rem 0rem;
+        background: linear-gradient(90deg, #A237A1 3%, #4C5ED9 57.5%, #4C5ED9 93%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        border-radius: 22rem;
+    }
+    .manager__body-item-text span{
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 24rem;
+        text-align: left;
+        color: #fff;
+    }
+    .manager__body-item-text p{
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 19.2rem;
+        text-align: left;
+        color: #C0C0C0;
+    }
 }
